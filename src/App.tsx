@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { CatList } from './Pages/CatList';
+import { CatFinder } from './Pages/CatFinder';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <>
-          <CatList />
+          <CatFinder />
         </>
       </header>
     </div>

@@ -39,4 +39,4 @@ export const CatList: React.FC = () => {
       <button onClick={addCat}>Add cat</button>
     </div>
   )
-}
+};
