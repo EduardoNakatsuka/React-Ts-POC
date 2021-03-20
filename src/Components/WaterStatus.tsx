@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface WaterProps {
-  isBoiling: Boolean,
+  isBoiling: boolean;
 }
 
 const WaterStatus: React.FC<WaterProps> = ({ isBoiling }) => {
   return (
     <>
-      { isBoiling ? 'Water is boiling' : 'Water is not boiling' }
+      { isBoiling ? 'Water is boiling' : 'Water is not boiling'}
     </>
   )
 };

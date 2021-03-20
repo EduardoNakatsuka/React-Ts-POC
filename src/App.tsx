@@ -32,7 +32,7 @@ const App: React.FC = () => {
     return (celsius * 9 / 5) + 32;
   };
 
-  const isBoiling = (): Boolean => {
+  const isBoiling = (): boolean => {
     let value = celsius;
 
     if (type === 'f') {
@@ -41,7 +41,7 @@ const App: React.FC = () => {
 
     return Math.round(value) >= 100;
   };
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -59,7 +59,7 @@ const App: React.FC = () => {
             label="Temperature in fahrenheit"
           />
 
-          <WaterStatus isBoiling={isBoiling()}/>
+          <WaterStatus isBoiling={isBoiling()} />
         </>
       </header>
     </div>
