@@ -22,6 +22,10 @@ export const RepositoriesList: React.FC = () => {
         />
 
         <button>Search</button>
+
+        {error && <h3>{error}</h3>}
+        {loading && <h3>Loading...</h3>}
+        {!error && !loading && data.map((name, index) => <div key={index}>{name}</div>)}
       </form>
     </div>
   );
